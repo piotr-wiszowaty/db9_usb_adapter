@@ -1,0 +1,5 @@
+usb_host.c
+usb_host_hid.c
+usb_host_hid_parser.c
+usb_host_msd.c
+usb_host_msd_scsi.c

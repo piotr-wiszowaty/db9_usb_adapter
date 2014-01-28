@@ -1,6 +1,10 @@
 build/
-src/MDD File System/
-src/USB/
+src/MDD File System/FSIO.c
+src/USB/usb_host.c
+src/USB/usb_host_hid.c
+src/USB/usb_host_hid_parser.c
+src/USB/usb_host_msd.c
+src/USB/usb_host_msd_scsi.c
 Makefile
 dist/
 nbproject/
