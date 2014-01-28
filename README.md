@@ -33,8 +33,8 @@ joystick/gamepad.
 
 In the following example there are messages showing enumerated device's
 vendor identifier, product identifier (the second - final pair counts)
-and HID reports consisting of report identifier (here: `0000`) and data
-in square brackets. The numbers in parenthesis at line ends are not sent.
+and HID reports consisting of report identifier (here: `0000`) and report
+data (in square brackets). The numbers in parenthesis at line ends are not sent.
 
     I:reset                                 (1)
     I:VID:PID 054C:0268                     (2)
