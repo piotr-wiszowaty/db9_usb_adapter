@@ -89,7 +89,7 @@ HID report data at `offset` masked with `mask` is equal/not equal to `value`.
 
     descriptor ::= vid_pid report_id control+
     vid_pid ::= 'vid:pid' vid ':' pid '\n'
-    'report_id' '=' BYTE '\n'
+    'report_id' BYTE '\n'
     vid ::= WORD
     pid ::= WORD
     control ::= action '[' offset ']' '&' mask operator value '\n'
