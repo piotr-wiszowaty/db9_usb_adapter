@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.2432mm 0.1418mm 1]
+Grid[393.700787 0.0720mm 0.0740mm 1]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[10.00mil 10.00mil 10.00mil 10.00mil 15.00mil 10.00mil]
@@ -785,8 +785,8 @@ Symbol['~' 12.00mil]
 	SymbolLine[15.00mil 35.00mil 20.00mil 35.00mil 8.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
-Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "10.00mil")
+Attribute("PCB::grid::unit" "mm")
+Attribute("PCB::grid::size" "0.1000mm")
 Attribute("import::src0" "db9_usb_adapter.sch")
 Via[49.9764mm 48.0254mm 40.00mil 20.00mil 0.0000 0.5000mm "" "thermal(1X)"]
 Via[58.6124mm 48.7874mm 40.00mil 20.00mil 0.0000 0.5000mm "" "thermal(1X)"]
@@ -1692,11 +1692,11 @@ Layer(4 "power")
 Layer(5 "outline")
 (
 	Line[75.9720mm 91.7860mm 46.0000mm 91.7860mm 10.00mil 20.00mil "clearline"]
-	Line[46.0000mm 38.7740mm 46.0000mm 91.7860mm 10.00mil 20.00mil "clearline"]
-	Line[75.9720mm 38.7740mm 75.9720mm 91.7860mm 10.00mil 20.00mil "clearline"]
-	Line[51.0800mm 33.6940mm 46.0000mm 38.7740mm 10.00mil 20.00mil "clearline"]
-	Line[70.8920mm 33.6940mm 75.9720mm 38.7740mm 10.00mil 20.00mil "clearline"]
-	Line[51.0800mm 33.6940mm 70.8920mm 33.6940mm 10.00mil 20.00mil "clearline"]
+	Line[46.0000mm 38.1740mm 46.0000mm 91.7860mm 10.00mil 20.00mil "clearline"]
+	Line[75.9720mm 38.1740mm 75.9720mm 91.7860mm 10.00mil 20.00mil "clearline"]
+	Line[51.0800mm 33.0940mm 46.0000mm 38.1740mm 10.00mil 20.00mil "clearline"]
+	Line[70.8800mm 33.0940mm 75.9720mm 38.1740mm 10.00mil 20.00mil "clearline"]
+	Line[51.0800mm 33.0940mm 70.8800mm 33.0940mm 10.00mil 20.00mil "clearline"]
 )
 Layer(6 "signal2")
 (
@@ -1970,8 +1970,8 @@ Layer(10 "silk")
 	Text[49.5192mm 76.0878mm 0 100 "RXD" "clearline"]
 	Text[49.6462mm 78.6278mm 0 100 "GND" "clearline"]
 	Text[49.6462mm 81.1678mm 0 100 "3V3" "clearline"]
-	Text[52.3500mm 82.1340mm 0 122 "rev1" "clearline"]
 	Text[53.8372mm 76.3418mm 0 100 "DB9-USB-Adapter" "clearline"]
+	Text[51.7720mm 82.2740mm 0 122 "rev2" "clearline"]
 )
 NetList()
 (
