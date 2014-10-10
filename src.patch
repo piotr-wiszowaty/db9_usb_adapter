@@ -1,0 +1,18 @@
+--- "/home/p/apps/microchip/application-libraries-2013-06-15/Microchip/USB/HID Host Driver/usb_host_hid_parser.c"	2013-06-17 19:40:22.000000000 +0200
++++ src/USB/usb_host_hid_parser.c	2014-05-11 20:02:38.331259022 +0200
+@@ -905,8 +905,13 @@
+    
+ //  Reality Check on the Report Main Item
+ 
+-    if (deviceRptInfo.globals.logicalMinimum >= ((LONG)1<<deviceRptInfo.globals.reportsize)) return(HID_ERR_BadLogicalMin) ;
+-    if (deviceRptInfo.globals.logicalMaximum >= ((LONG)1<<deviceRptInfo.globals.reportsize))return(HID_ERR_BadLogicalMax);
++    if (deviceRptInfo.globals.logicalMinimum >= ((LONG) 1 << deviceRptInfo.globals.reportsize)) {
++		return(HID_ERR_BadLogicalMin) ;
++	}
++    if (deviceRptInfo.globals.logicalMaximum >= ((LONG) 1 << deviceRptInfo.globals.reportsize)) {
++		// Workaround for problem with 040b:6533 Weltrend Semiconductor Speed-Link Competition Pro's report descriptor
++		//return(HID_ERR_BadLogicalMax);
++	}
+     // The barcode scanner has this issue.  We'll ignore it.
+ 	// if (deviceRptInfo.globals.logicalMinimum > deviceRptInfo.globals.logicalMaximum)return(HID_ERR_BadLogical); 
+     if (deviceRptInfo.haveUsageMin || deviceRptInfo.haveUsageMax)return(HID_ERR_UnmatchedUsageRange);
